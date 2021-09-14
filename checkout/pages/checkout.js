@@ -12,7 +12,10 @@ const Checkout = (props) => (
     <div className="hero">
       <h1>Checkout page</h1>
       <h3 className="title">
-        This is a federated page owned by localhost:3000
+        This is a federated page owned by{" "}
+        <a target="localhost:3000" href="http://localhost:3000/checkout">
+          Checkout app
+        </a>
       </h3>
       <Link href="/payment">
         <a>Proceed to payment</a>

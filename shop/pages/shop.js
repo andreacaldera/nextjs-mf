@@ -12,7 +12,10 @@ const Shop = (props) => (
     <div className="hero">
       <h1>Shop Page</h1>
       <h3 className="title">
-        This is a federated page owned by localhost:3002
+        This is a federated page owned by{" "}
+        <a target="localhost:3002" href="http://localhost:3002/shop">
+          Shop app
+        </a>
       </h3>
       <ul>
         <li>
