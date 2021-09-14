@@ -39,7 +39,7 @@ module.exports = withFederatedSidecar({
         new webpack.container.ModuleFederationPlugin({
           remoteType: "var",
           remotes: {
-            home: "home",
+            // home: "home",
             shop: "shop",
             checkout: "checkout",
           },

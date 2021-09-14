@@ -86,7 +86,7 @@ export function createFederatedCatchAll(remotes) {
         return { render404: true, ...props };
       }
 
-      console.log("loading exposed module", mod, "from remote", remote);
+      console.log("loading exposed module", mod, "from remote", remote, matchedPage);
       try {
         if (!window[remote].__initialized) {
           window[remote].__initialized = true;
@@ -105,10 +105,12 @@ export function createFederatedCatchAll(remotes) {
         return { render404: true, ...props };
       }
 
+      console.log('context', ctx, matchedPage.params)
       const modifiedContext = {
         ...ctx,
         query: matchedPage.params,
       };
+      console.log('modified context', modifiedContext)
       const federatedPageProps =
         (await FederatedPage.getInitialProps?.(modifiedContext)) || {};
       return { ...federatedPageProps, FederatedPage };

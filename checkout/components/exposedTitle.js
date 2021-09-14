@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-const ExportredTitle = () => {
+const ExportedTitle = ({ title }) => {
   console.log("---------loading remote component---------");
   useEffect(() => {
     console.log("HOOKS WORKS");
@@ -8,11 +8,11 @@ const ExportredTitle = () => {
     <div className="hero">
       <h1 className="title">
         {" "}
-        This came fom <code>checkout</code> !!!
+        This came fom a remote component with title as prop<code>{title}</code> !!!
       </h1>
       <p className="description">And it works like a charm v2</p>
     </div>
   );
 };
 
-export default ExportredTitle;
+export default ExportedTitle;

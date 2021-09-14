@@ -1,5 +1,6 @@
 import React from "react";
 import Head from "next/head";
+import Link from "next/link";
 
 const Shop = (props) => (
   <div>
@@ -13,9 +14,28 @@ const Shop = (props) => (
       <h3 className="title">
         This is a federated page owned by localhost:3002
       </h3>
+      <ul>
+        <li>
+          <Link href="p/1">
+            <a>Product One</a>
+          </Link>
+        </li>
+        <li>
+          <Link href="p/2">
+            <a>Product Two</a>
+          </Link>
+        </li>
+      </ul>
+      <span>
+        {" "}
+        Data from federated <pre>getInitalProps</pre>
+      </span>
+      <br />
+      <pre>{JSON.stringify(props, null, 2)}</pre>
     </div>
     <style jsx>{`
       .hero {
+        background: lightblue;
         width: 100%;
         color: #333;
       }
@@ -34,6 +54,7 @@ const Shop = (props) => (
   </div>
 );
 Shop.getInitialProps = async () => {
+  console.log("get shop initial props");
   const swapi = await fetch("https://swapi.dev/api/people/1").then((res) =>
     res.json()
   );

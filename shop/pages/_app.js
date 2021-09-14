@@ -12,7 +12,9 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Nav />
+      <div style={{ background: 'lightblue' }}>
       <Component {...pageProps} />
+      </div>
     </>
   );
 }

@@ -8,6 +8,7 @@ module.exports = withFederatedSidecar({
   exposes: {
     "./title": "./components/exposedTitle.js",
     "./checkout": "./pages/checkout",
+    "./payment": "./pages/payment",
     "./pages-map": "./pages-map.js",
   },
   shared: {
@@ -40,8 +41,6 @@ module.exports = withFederatedSidecar({
           remoteType: "var",
           remotes: {
             home: "home",
-            shop: "shop",
-            checkout: "checkout",
           },
           shared: {
             "@module-federation/nextjs-mf/lib/noop": {

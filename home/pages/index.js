@@ -1,9 +1,12 @@
 import React, { Fragment } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
+
 const RemoteTitle = dynamic(
   () => {
     return window.checkout?.get("./title").then((factory) => factory());
+    // const mod = import("checkout/title");
+    // return mod
   },
   { ssr: false }
 );
@@ -17,7 +20,7 @@ const Home = ({ loaded }) => {
       </Head>
 
       <div className="hero">
-        <RemoteTitle />
+        <RemoteTitle title="Title from home" />
         <h1 className="title">
           Welcome to Next.js on Webpack 5! <code>home</code>
         </h1>

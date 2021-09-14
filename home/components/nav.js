@@ -37,6 +37,7 @@ const Nav = () => (
           Helvetica, sans-serif;
       }
       nav {
+        background: yellow;
         text-align: center;
       }
       ul {
