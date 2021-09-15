@@ -1,6 +1,6 @@
 import Nav from "../components/nav";
 function MyApp({ Component, pageProps }) {
-  console.log("home app 1");
+  console.log("home app");
   return (
     <>
       <Nav />
