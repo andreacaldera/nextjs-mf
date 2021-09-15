@@ -12,7 +12,7 @@ class MyDocument extends Document {
         <body>
           <script
             data-webpack="checkout"
-            src="http://localhost:3000/_next/static/chunks/remoteEntry.js"
+            src={`${process.env.NEXT_PUBLIC_CHECKOUT_BASE_URL}/_next/static/chunks/remoteEntry.js`}
           />
           <script
             data-webpack="shop"
@@ -20,7 +20,7 @@ class MyDocument extends Document {
           />
           <script
             data-webpack="home"
-            src="http://localhost:8080/_next/static/chunks/remoteEntry.js"
+            src={`${process.env.NEXT_PUBLIC_HOME_BASE_URL}/_next/static/chunks/remoteEntry.js`}
           />
           <Main />
           <NextScript />

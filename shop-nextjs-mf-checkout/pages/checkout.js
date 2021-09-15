@@ -14,7 +14,10 @@ const Checkout = (props) => (
       <h1>Checkout page</h1>
       <h3 className="title">
         This is a federated page owned by{" "}
-        <a target="localhost:3000" href="http://localhost:3000/checkout">
+        <a
+          target="checkout-app"
+          href={`${process.env.NEXT_PUBLIC_CHECKOUT_BASE_URL}/checkout`}
+        >
           Checkout app
         </a>
       </h3>

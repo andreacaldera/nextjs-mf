@@ -7,7 +7,7 @@ Due to the effort to support Next.js and funding constraints, I have moved the p
 ## Getting Started
 
 1. run `npm install @module-federation/nextjs-mf --registry https://r.privjs.com` with npm 7 or install it directly in each folder/app, note the plugin is not free.
-2. run `yarn start` and browse to `http://localhost:3000`, `http://localhost:8080`, or `http://localhot:3002`
+2. run `yarn start` and browse to `NEXT_PUBLIC_CHECKOUT_BASE_URL`, `NEXT_PUBLIC_HOME_BASE_URL`, or `http://localhot:3002`
 
 # We are available to consult
 

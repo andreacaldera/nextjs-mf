@@ -34,6 +34,11 @@ jobs:
           # yarn build:ts
           # yarn build:ts
           # yarn test
+
+      - name: Setup env variables
+        run: |
+          mv .env .env.local    
+          mv .env.prod .env    
       
       - name: Deploy site to Vercel      
         uses: amondnet/vercel-action@v20
