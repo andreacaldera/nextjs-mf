@@ -8,8 +8,8 @@
   ],
   "scripts": {
     "start": "concurrently \"cd shop-nextjs-mf-checkout; npm run dev\" \"cd shop-nextjs-mf-home; npm run dev\" \"cd shop; npm run dev\"",
-    "build": "concurrently \"cd checkout; npm run build\" \"cd home; npm run build\" \"cd shop; npm run build\"",
-    "serve": "concurrently \"cd checkout; npm run start\" \"cd home; npm run start\" \"cd shop; npm run start\""
+    "build": "concurrently \"cd shop-nextjs-mf-checkout; npm run build\" \"cd shop-nextjs-mf-home; npm run build\" \"cd shop; npm run build\"",
+    "serve": "concurrently \"cd shop-nextjs-mf-checkout; npm run start\" \"cd shop-nextjs-mf-home; npm run start\" \"cd shop; npm run start\""
   },
   "dependencies": {
     "concurrently": "^6.2.0"

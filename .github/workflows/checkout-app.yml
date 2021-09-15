@@ -39,7 +39,7 @@ jobs:
         run: |
           cd shop-nextjs-mf-checkout
           mv .env .env.local    
-          mv .env.prod .env    
+          mv .env.prod .env
       
       - name: Deploy site to Vercel      
         uses: amondnet/vercel-action@v20
@@ -48,4 +48,4 @@ jobs:
           vercel-token: ${{ secrets.VERCEL_TOKEN }} 
           vercel-args: '--prod'
           vercel-org-id: ${{ secrets.ORG_ID}}
-          vercel-project-id: ${{ secrets.PROJECT_ID}}
+          vercel-project-id: ${{ secrets.CHECKOUT_PROJECT_ID}}
