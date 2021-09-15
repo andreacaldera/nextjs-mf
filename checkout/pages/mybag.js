@@ -1,9 +1,8 @@
 import React from "react";
 import Head from "next/head";
+import Link from "next/link";
 
-// todo
-
-const MyBag = (props) => (
+const MyBag = () => (
   <div>
     <Head>
       <title>My Bag</title>
@@ -12,10 +11,11 @@ const MyBag = (props) => (
 
     <div className="hero">
       <h1>my bag page</h1>
-      <h3 className="title">
-        This is a federated page, consumed by localhost:3001
-      </h3>
+      <h3 className="title">This is a federated page</h3>
       <br />
+      <Link href="/checkout">
+        <a>Back to checkout</a>
+      </Link>
     </div>
     <style jsx>{`
       .hero {
@@ -37,9 +37,6 @@ const MyBag = (props) => (
   </div>
 );
 MyBag.getInitialProps = async () => {
-  const swapi = await fetch("https://swapi.dev/api/people/1").then((res) =>
-    res.json()
-  );
-  return swapi;
+  return {};
 };
 export default MyBag;

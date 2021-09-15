@@ -2,7 +2,7 @@ import React from "react";
 import Head from "next/head";
 import Link from "next/link";
 
-const Checkout = () => (
+const Payment = () => (
   <div>
     <Head>
       <title>Another checkout page</title>
@@ -35,7 +35,7 @@ const Checkout = () => (
     `}</style>
   </div>
 );
-Checkout.getInitialProps = async () => {
+Payment.getInitialProps = async () => {
   return {};
 };
-export default Checkout;
+export default Payment;

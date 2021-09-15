@@ -21,6 +21,10 @@ const Checkout = (props) => (
         <a>Proceed to payment</a>
       </Link>
       <br />
+      <Link href="/mybag">
+        <a>My bag</a>
+      </Link>
+      <br />
       <span>
         {" "}
         Data from federated <pre>getInitalProps</pre>

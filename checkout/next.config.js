@@ -9,6 +9,7 @@ module.exports = withFederatedSidecar({
     "./title": "./components/exposedTitle.js",
     "./checkout": "./pages/checkout",
     "./payment": "./pages/payment",
+    "./mybag": "./pages/mybag",
     "./pages-map": "./pages-map.js",
   },
   shared: {
