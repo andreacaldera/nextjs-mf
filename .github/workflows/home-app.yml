@@ -37,6 +37,7 @@ jobs:
 
       - name: Setup env variables
         run: |
+          cd shop-nextjs-mf-home
           mv .env .env.local    
           mv .env.prod .env     
       
