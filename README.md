@@ -7,7 +7,7 @@ Due to the effort to support Next.js and funding constraints, I have moved the p
 ## Getting Started
 
 1. run `npm install @module-federation/nextjs-mf --registry https://r.privjs.com` with npm 7 or install it directly in each folder/app, note the plugin is not free.
-2. run `yarn start` and browse to `http://localhost:3000`, `http://localhost:3001`, or `http://localhot:3002`
+2. run `yarn start` and browse to `http://localhost:3000`, `http://localhost:8080`, or `http://localhot:3002`
 
 # We are available to consult
 
@@ -22,7 +22,7 @@ All solutions for next.js currently require a paid access or paid plugin
 We have three next.js applications
 
 - `checkout` - port 3000
-- `home` - port 3001
+- `home` - port 8080
 - `shop` - port 3002
 
 The applications utilize omnidirectional routing and pages or components are able to be federated between applications like a SPA

@@ -20,7 +20,7 @@ class MyDocument extends Document {
           />
           <script
             data-webpack="home"
-            src="http://localhost:3001/_next/static/chunks/remoteEntry.js"
+            src="http://localhost:8080/_next/static/chunks/remoteEntry.js"
           />
           <Main />
           <NextScript />

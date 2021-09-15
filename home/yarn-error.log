@@ -34,7 +34,7 @@ npm manifest:
     "scripts": {
       "dev": "NODE_OPTIONS='--inspect' next dev -p 3001",
       "build": "NEXT_TELEMETRY_DISABLED=1 next build",
-      "start": "next start -p 3001"
+      "start": "next start -p 8080"
     },
     "dependencies": {
       "nextjs-shared": "*",

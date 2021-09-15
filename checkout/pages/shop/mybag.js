@@ -1,6 +1,8 @@
 import React from "react";
 import Head from "next/head";
 
+// todo
+
 const MyBag = (props) => (
   <div>
     <Head>
