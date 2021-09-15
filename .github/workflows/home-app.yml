@@ -7,7 +7,6 @@ on:
     paths:
       - 'shop-nextjs-mf-home/**'  
 
-
 env:
   NODE_VERSION: '14.x'
 
@@ -25,6 +24,7 @@ jobs:
         run: |
           echo "//npm.pkg.github.com/:_authToken=${{ secrets.GH_TOKEN }}" > .npmrc 
           echo "@andreacaldera:registry=https://npm.pkg.github.com" >> .npmrc
+          echo "//r.privjs.com/:_authToken=${{ secrets.PRIVJS_TOKEN }}" >> .npmrc
           yarn
       - name: Code quality
         run:  |
