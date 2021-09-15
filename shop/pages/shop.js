@@ -2,6 +2,16 @@ import React from "react";
 import Head from "next/head";
 import Link from "next/link";
 
+import dynamic from "next/dynamic";
+
+const RemoteBasket = dynamic(
+  () => {
+    return window.checkout?.get("./basket").then((factory) => factory());
+    // const mod = import("checkout/basket");
+    // return mod;
+  },
+  { ssr: false }
+);
 const Shop = (props) => (
   <div>
     <Head>
@@ -17,6 +27,7 @@ const Shop = (props) => (
           Shop app
         </a>
       </h3>
+      <RemoteBasket />
       <ul>
         <li>
           <Link href="p/1">

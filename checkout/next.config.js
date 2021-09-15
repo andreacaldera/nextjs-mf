@@ -7,6 +7,7 @@ module.exports = withFederatedSidecar({
   filename: "static/chunks/remoteEntry.js",
   exposes: {
     "./title": "./components/exposedTitle.js",
+    "./basket": "./components/basket.js",
     "./checkout": "./pages/checkout",
     "./payment": "./pages/payment",
     "./mybag": "./pages/mybag",

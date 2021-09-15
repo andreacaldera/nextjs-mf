@@ -1,6 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import Link from "next/link";
+import { Basket } from "../components/basket";
 
 const Checkout = (props) => (
   <div>
@@ -17,6 +18,8 @@ const Checkout = (props) => (
           Checkout app
         </a>
       </h3>
+      <Basket />
+      <br />
       <Link href="/payment">
         <a>Proceed to payment</a>
       </Link>
