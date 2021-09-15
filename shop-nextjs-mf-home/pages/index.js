@@ -12,6 +12,7 @@ const RemoteTitle = dynamic(
 );
 
 const Home = ({ loaded }) => {
+  console.log("home");
   return (
     <div>
       <Head>

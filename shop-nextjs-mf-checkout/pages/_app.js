@@ -9,6 +9,7 @@ const Nav = dynamic(
 );
 
 function MyApp({ Component, pageProps }) {
+  console.log("checkout app");
   return (
     <>
       <Nav />
