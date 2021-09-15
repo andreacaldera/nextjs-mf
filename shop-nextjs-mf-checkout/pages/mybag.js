@@ -19,6 +19,7 @@ const MyBag = () => (
     </div>
     <style jsx>{`
       .hero {
+        background: lightgreen;
         width: 100%;
         color: #333;
       }

@@ -1,11 +1,11 @@
-name: Deploy home app
+name: Deploy checkout app
 
 on:
   push:
     branches:
       - main
     paths:
-      - 'shop-nextjs-mf-home/**'  
+      - 'shop-nextjs-mf-checkout/**'  
 
 env:
   NODE_VERSION: '14.x'
@@ -26,7 +26,7 @@ jobs:
           echo "@andreacaldera:registry=https://npm.pkg.github.com" >> .npmrc
           echo "@module-federation:registry=https://r.privjs.com" >> .npmrc
           echo "//r.privjs.com/:_authToken=${{ secrets.PRIVJS_TOKEN }}" >> .npmrc
-          cp .npmrc shop-nextjs-mf-home/
+          cp .npmrc shop-nextjs-mf-checkout/
           yarn
       - name: Code quality
         run:  |
