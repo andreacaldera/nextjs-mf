@@ -4,6 +4,10 @@ on:
   push:
     branches:
       - main
+    paths:
+      - 'shop-nextjs-mf-home/**'  
+
+
 env:
   NODE_VERSION: '14.x'
 
@@ -32,6 +36,7 @@ jobs:
       - name: Deploy site to Vercel      
         uses: amondnet/vercel-action@v20
         with:
+          working-directory: shop-nextjs-mf-home
           vercel-token: ${{ secrets.VERCEL_TOKEN }} 
           vercel-args: '--prod'
           vercel-org-id: ${{ secrets.ORG_ID}}
